@@ -13,7 +13,7 @@ import br.com.camila.projetoempresa.model.Departamento;
 public class DepartamentoController {
 	
 	@Autowired
-	DepartamentoDAO dao;
+	private DepartamentoDAO dao;
 	
 	@GetMapping("/departamentos")
 	public ArrayList<Departamento> recuperarTodos(){
@@ -22,8 +22,8 @@ public class DepartamentoController {
 		return departamentos;
 		
 		/*
-		 * modo 2 de fazer
-		 * 
+		 * Modo 2 de fazer
+		 * casting
 		 * return ArrayList<Departamento>)dao.findAll();
 		 */
 	}
