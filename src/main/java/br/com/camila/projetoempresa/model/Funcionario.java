@@ -1,7 +1,6 @@
 package br.com.camila.projetoempresa.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,6 +12,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="funcionario")
+@JsonIgnoreProperties("listaFuncionarios")
 public class Funcionario {
 	
 	@Id
@@ -37,7 +37,7 @@ public class Funcionario {
 	 */	
 	@ManyToOne
 	@JoinColumn(name="numero_id")
-	@JsonIgnoreProperties("listaFuncionarios")
+	@JsonIgnoreProperties("listaFuncionarios")	
 	private Departamento depto;
 
 	public Integer getNumFuncional() {

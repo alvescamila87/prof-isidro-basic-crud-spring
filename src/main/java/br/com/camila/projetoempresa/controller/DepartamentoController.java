@@ -18,9 +18,9 @@ public class DepartamentoController {
 	@GetMapping("/departamentos")
 	public ArrayList<Departamento> recuperarTodos(){
 		ArrayList<Departamento> departamentos;
-		departamentos = (ArrayList<Departamento>)dao.findAll();
+		//departamentos = (ArrayList<Departamento>)dao.findAll();
 		//departamentos = (ArrayList<Departamento>)dao.findByOrderByNome();
-		//departamentos = (ArrayList<Departamento>)dao.findByAndar(1);
+		departamentos = (ArrayList<Departamento>)dao.findByAndar(1);
 		//departamentos = (ArrayList<Departamento>)dao.findByOrderByNomeDesc();
 		//departamentos = (ArrayList<Departamento>)dao.findByOrderByNumeroIdDesc();
 		//departamentos = (ArrayList<Departamento>)dao.findByNumeroIdOrAndar(4, 3);
