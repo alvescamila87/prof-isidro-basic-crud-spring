@@ -13,7 +13,6 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="funcionario")
-@JsonIgnoreProperties("listaFuncionarios")
 public class Funcionario {
 	
 	@Id
