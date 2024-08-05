@@ -71,14 +71,12 @@ public class Funcionario {
 		this.salario = salario;
 	}
 
-	public Departamento getDepartamento() {
+	public Departamento getDepto() {
 		return depto;
 	}
 
-	public void setDepartamento(Departamento departamento) {
-		this.depto = departamento;
-	}
-	
-	
+	public void setDepto(Departamento depto) {
+		this.depto = depto;
+	}	
 	
 }
